@@ -10,6 +10,7 @@ curl_exec($ch);
 if(curl_error($ch)) {
     fwrite($fp, curl_error($ch));
 }
+var_dump($fp);
 curl_close($ch);
 fclose($fp);
 ?>
